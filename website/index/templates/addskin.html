@@ -1,0 +1,16 @@
+<!-- templates/inserir_dados.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserir Dados</title>
+</head>
+<body>
+    <h1>Inserir Dados</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
