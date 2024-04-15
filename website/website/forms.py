@@ -6,4 +6,4 @@ class SkinForm(forms.ModelForm):
 
   class Meta:
     model = Produto
-    fields = ('nome','imagem','descricao','preco')
+    fields = ('nome','imagem','preco')
